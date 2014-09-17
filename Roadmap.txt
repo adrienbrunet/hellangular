@@ -14,3 +14,4 @@ Step2
 -----
 
 We try in this step to create a ToDoList app. Let's face it, this is the real hello world today.
+This step uses bootstrap for some fancy css and underscore for fancy filter.
