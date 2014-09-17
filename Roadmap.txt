@@ -15,3 +15,12 @@ Step2
 
 We try in this step to create a ToDoList app. Let's face it, this is the real hello world today.
 This step uses bootstrap for some fancy css and underscore for fancy filter.
+
+Step3
+-----
+
+Via egghead.io, we try another approach to build a todolist app with more features.
+
+Step4
+-----
+Actally see how to link django with this new techniques
