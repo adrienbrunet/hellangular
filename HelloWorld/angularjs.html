@@ -1,7 +1,10 @@
 <!doctype html>
-<html>
-<head></head>
+<html ng-app>
+<head>
+  <script src="angular-1.2.25.min.js"></script>
+</head>
 <body>
-  <h2>Hello John!</h2>
+  <input type="text" ng-model="name">
+  <h2>Hello {{name}}!</h2>
 </body>
 </html>
