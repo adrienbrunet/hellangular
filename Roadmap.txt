@@ -1,0 +1,15 @@
+HelloWorld
+---
+
+Step 1
+-----
+
+First, we create a helloworld.html saying 'Hi John!'.
+The aim is to display Hello Mr Bond as the user types his name. (if it is james bond typing)
+
+We try this with jquery (jquery.html) and then with angular (angularjs.html)
+
+
+Step2
+-----
+
