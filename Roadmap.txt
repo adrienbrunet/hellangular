@@ -13,3 +13,4 @@ We try this with jquery (jquery.html) and then with angular (angularjs.html)
 Step2
 -----
 
+We try in this step to create a ToDoList app. Let's face it, this is the real hello world today.
