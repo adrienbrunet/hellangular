@@ -49,7 +49,7 @@ angular.module('Eggly', [
             title: '',
             url: '',
             category: $scope.currentCategory
-        }
+        };
       }
       function createBookmark(bookmark) {
         bookmark.id = $scope.bookmarks.length;
@@ -59,6 +59,30 @@ angular.module('Eggly', [
       }
 
       $scope.createBookmark = createBookmark;
+      $scope.editedBookmark = null;
+
+      function setEditedBookmark(bookmark) {
+        $scope.editedBookmark = angular.copy(bookmark);
+      }
+
+      function updateBookmark(bookmark) {
+        var index = _.findIndex($scope.bookmarks, function(b){
+          return b.id == bookmark.id;
+        });
+        $scope.bookmarks[index] = bookmark;
+        $scope.editedBookmark = null;
+        $scope.isEditing = false;
+
+      }
+
+      function isSelectedBookmark(bookmarkId) {
+        return $scope.editedBookmark !== null && $scope.editedBookmark.id == bookmarkId;
+      }
+
+      $scope.isSelectedBookmark = isSelectedBookmark;
+
+      $scope.setEditedBookmark = setEditedBookmark;
+      $scope.updateBookmark = updateBookmark;
 
 
       //-------------------------------------------------------------------------------------------------
